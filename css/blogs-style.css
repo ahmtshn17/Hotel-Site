@@ -1,0 +1,49 @@
+@import url(style.css);
+
+header#blog-header {
+  background-image: url(../img/bg-2.jpeg) !important;
+  height: 50vh !important;
+  background-attachment: local;
+  position: relative;
+}
+
+main {
+  padding: 3rem 5rem;
+}
+
+.blog-img {
+  flex: 2;
+}
+
+.blog-img img {
+  height: 100%;
+}
+
+.blog-content {
+  /* width: 100%; */
+  flex: 3;
+  /* height: 55rem; */
+  align-items: flex-start;
+}
+
+.blog-content div {
+  padding: 3rem;
+}
+
+.blog-content h2 {
+  margin-bottom: 1rem;
+}
+
+.content-one {
+  margin-top: 1.5rem;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .content-one {
+    flex-direction: column;
+  }
+}

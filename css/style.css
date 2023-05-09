@@ -1,0 +1,370 @@
+@import url(general.css);
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+/* ----------------------------------------------------------------- */
+/* Navbar Style Start */
+
+.flex-container {
+  justify-content: space-between;
+  opacity: 0.8;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  background-color: var(--Dark);
+}
+
+.navigation {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.navigation a {
+  color: var(--Light);
+  padding: 0rem 2rem;
+}
+
+.navigation a:hover {
+  border-bottom: 2px solid var(--Warning);
+}
+
+/* Navbar Style Finish */
+
+/* ----------------------------------------------------------------- */
+
+/* Header Style Start */
+
+header {
+  background-image: url(../img/bg-1.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-size: 3rem;
+  padding: 0rem 3rem;
+}
+
+.logo span {
+  color: var(--Warning);
+}
+
+.header-content {
+  height: 100%;
+}
+
+.header-content h1 {
+  font-size: 5.5rem;
+}
+
+header * {
+  z-index: 5;
+}
+
+.header-content p {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 1rem 0rem 3rem 0rem;
+}
+
+/* Header Style Finish */
+
+/* ----------------------------------------------------------------- */
+/* Icons Style Start */
+
+#icons {
+  padding: 3rem;
+}
+
+.icon-item {
+  padding: 2rem 1rem;
+}
+
+#icons i {
+  color: #fff;
+  font-size: 4.8rem;
+  background-color: var(--Primary);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+#icons h3 {
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 400;
+}
+
+/* Icons Style Finish */
+
+/* ----------------------------------------------------------------- */
+/* About Style Start */
+
+.about-row {
+  height: 100%;
+}
+
+.binary-content .col-1,
+.binary-content .col-2 {
+  width: 100%;
+}
+
+.binary-content .col-2 div {
+  align-items: flex-start;
+  height: 100%;
+  padding-inline: 3rem;
+}
+
+.binary-content .col-2 h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.binary-content .col-2 p {
+  margin-bottom: 2rem;
+}
+
+.binary-content .secondary .col-2 {
+  order: -1;
+}
+
+.binary-content img {
+  height: 100%;
+  background-size: contain;
+}
+
+.secondary .btn-primary {
+  background: var(--Primary);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* About Style Finish */
+
+/* ----------------------------------------------------------------- */
+/* Gallery Style Start */
+
+#gallery .pictures {
+  margin-block: 3rem;
+}
+
+#gallery .pictures img:hover {
+  opacity: 0.8;
+}
+
+#gallery .gallery-row {
+  padding-inline: 2.3rem;
+}
+
+.column-item {
+  flex: 25%;
+}
+
+#gallery .gallery-row div {
+  padding: 0rem 0.5rem;
+}
+
+.gallery-row div img {
+  margin-bottom: 1rem;
+}
+
+/* Gallery Style Finish */
+/* ----------------------------------------------------------------- */
+/* Rooms Style Start */
+
+#rooms {
+  margin-bottom: 3rem;
+  height: 100%;
+}
+
+.rooms-row {
+  padding: 2rem;
+  height: 100%;
+}
+
+.rooms-row .col {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.rooms-row img {
+  height: 100%;
+}
+
+.room-content {
+  color: #fff;
+  padding-block: 1.5rem;
+}
+
+.room-content p {
+  font-weight: 700;
+}
+
+/* Rooms Style Finish */
+
+/* ----------------------------------------------------------------- */
+/* Workers Style Start */
+
+.workers-row {
+  padding: 2rem 2rem 5rem 2rem;
+}
+
+.workers-row img {
+  border-radius: 50%;
+  padding-inline: 2rem;
+}
+
+.workers-row img:hover {
+  opacity: 0.8;
+}
+
+/* Workers Style Finish */
+
+/* ----------------------------------------------------------------- */
+
+/* Contact Us Style Start */
+
+.colon {
+  width: 100%;
+  flex: 1;
+}
+
+.contact-row h2 {
+  font-size: 4rem;
+}
+
+.contact-row .colon-2 .colon-container {
+  padding: 3rem;
+}
+
+.contact-row form {
+  font-size: 1.8rem;
+}
+
+.contact-row input {
+  padding: 1rem 0.5rem;
+  width: 100%;
+  border: 1px solid rgb(81, 140, 218);
+  border-radius: 5px;
+}
+
+.contact-row input:focus {
+  border: 1px solid rgb(218, 81, 166);
+  outline: none;
+}
+
+.contact-row img {
+  height: 100%;
+}
+
+.contact-inclusive {
+  margin-block: 1rem;
+  padding-block: 0.5rem;
+}
+
+.colon-2 button {
+  margin-block: 2rem;
+}
+
+/* Contact Us Style Finish */
+
+/* ----------------------------------------------------------------- */
+
+/* Footer Style Start */
+
+footer {
+  height: 20rem;
+}
+
+footer i {
+  margin-inline: 0.5rem;
+  transition: all 0.5s;
+}
+
+footer i:hover {
+  opacity: 0.7;
+  font-size: 3rem;
+}
+
+/* Footer Style Finish */
+
+/* ----------------------------------------------------------------- */
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10rem;
+  }
+
+  #icons {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about-row {
+    flex-direction: column;
+  }
+
+  .binary-content .col-1 img {
+    vertical-align: bottom;
+  }
+
+  .binary-content .col-2 {
+    padding-block: 2rem;
+  }
+
+  .binary-content .secondary .col-2 {
+    order: 2;
+  }
+
+  .column-item {
+    flex: 50%;
+  }
+
+  .rooms-row {
+    flex-direction: column;
+  }
+
+  .workers-row {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
